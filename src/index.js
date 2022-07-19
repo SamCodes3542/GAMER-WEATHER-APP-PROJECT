@@ -50,7 +50,7 @@ function handleSubmit(event) {
 
 function searchLocation(position) {
   let apiKey = "094b50c9907d04014c22a077f5e1062a";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metrics`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
   console.log(apiUrl);
 
