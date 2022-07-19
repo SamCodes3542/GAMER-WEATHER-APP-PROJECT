@@ -129,7 +129,12 @@ footer {
   color: pink;
   text-decoration: underline;
 }
-
+.gitLink {
+  color: black;
+}
+.gitLink:hover {
+  color: white;
+}
 .container {
   border: 20px;
   border-radius: 20px;
