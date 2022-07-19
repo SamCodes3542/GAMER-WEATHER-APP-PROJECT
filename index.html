@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP PROJECT</title>
+
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="snonymous"
+    />
+    <script src="https://kit.fontawesome.com/9dd5b43ce8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+
+</head>
+
+
+  <body>
+     <div class="container"> 
+      <h1 id="city">
+        Chicago,IL
+      </h1>
+    
+      <h2>
+        ☀ 
+      </h2>
+      <h3>
+          <span class="temperature">
+        <span id="temperature">19</span>°
+         <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </span>
+      </h3>
+     </div>
+     <form id="city-form">
+  <div class="form-group fg--search">
+  <input type="text" 
+  class="input"
+  placeholder="search"
+  id="city-input">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+ <button
+      class="btn btn-success"
+      id="current-location-button"
+    >
+      Current
+    </button>
+</form>
+  <body>
+      <ul class="current">
+        <li id="date">
+          Wednesday 22:00
+        </li>
+        <li>
+        Currently <span id="description"></span>
+        </li>
+        <li>
+        Humidity: <span id="humidity"></span>% 
+      </li>
+      <li>
+        Wind: <span id="wind"></span>mph
+      </li>
+		</ul>
+		
+   <strong><div class="card">
+          <div class="card-body">
+          <p>
+            5 Day ForeCast
+					</p>
+					 <div class="row">
+            <div class="col-2">
+
+            </div>
+						 
+					 <div class="col-2"> 
+            <div class="card-temp"></div>
+             Sun 
+             <br/>
+             85°
+             <br>
+             ☀
+					 </div>
+					 <div class="col-2"> 
+            <div class="card-temp"></div>
+             Mon
+             <br>
+             81°
+             <br>
+             🌥
+						  </div>
+					 <div class="col-2"> 
+            <div class="card-temp"></div>
+             Tue 
+             <br>
+             79°
+             <br>
+             🌨
+						</div>
+					 <div class="col-2"> 
+            <div class="card-temp"></div>
+             Wed
+             <br> 
+             74° 
+             <br>
+               🌦
+						</div>
+					 <div class="col-2"> 
+            <div class="card-temp"></div>
+             Thur 
+             <br>
+             80°
+             <br>
+             ☀
+           </div> 
+           </div>
+           <div class="slogan">
+             <i class="fa-solid fa-wind"></i>
+            The Windy City
+            <i class="fa-solid fa-wind"></i>
+           </div>
+          
+
+          <script src="src/index.js"></script>
+
+        
+      </div></strong>
+ <footer>
+           Coded By 
+           <a href="https://www.linkedin.com/in/samantha-montgomery-70a68323a/" target="_blank" class="name">
+           <span>Samantha Montgomery</span>
+             </a>
+               </footer>
+    </div>
+    </div>
+             
+  </body>
+
+</html>
