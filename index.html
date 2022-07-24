@@ -29,23 +29,26 @@
         Chicago,IL
       </h1>
     
+      <img src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt="weather icon"
+          id="icon"
+          />
       <h2>
-     ☀
-      </h2>
-      <h3>
           <span class="temperature">
         <span id="temperature">19</span>°
          <a href="#" id="celsius-link">°C</a> |
         <a href="#" id="fahrenheit-link">°F</a>
       </span>
-      </h3>
+      </h2>
      </div>
      <form id="city-form">
   <div class="form-group fg--search">
   <input type="text" 
   class="input"
   placeholder="search"
-  id="city-input">
+  id="city-input"
+  autocomplete = "off"
+  autofocus = "on">
   <button type="submit"><i class="fa fa-search"></i></button>
 </div>
  <button
