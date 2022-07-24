@@ -19,17 +19,6 @@ h1 {
 }
 h2 {
   position: fixed;
-  top: 80px;
-  font-weight: bold;
-  left: 400px;
-  color: yellow;
-  font-size: 250px;
-  display: block;
-  margin: 0 auto;
-}
-
-h3 {
-  position: fixed;
   color: rgb(224, 68, 224);
   top: 130px;
   left: 690px;
@@ -53,6 +42,15 @@ footer {
   display: block;
   margin: 0 auto;
   font-size: 14px;
+}
+#icon {
+  position: fixed;
+  top: 80px;
+  font-weight: bold;
+  left: 400px;
+  font-size: 250px;
+  display: block;
+  margin: 0 auto;
 }
 #fahrenheit-link {
   font-size: 25px;
