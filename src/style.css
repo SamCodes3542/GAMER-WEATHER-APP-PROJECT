@@ -127,9 +127,9 @@ footer {
   color: rgb(104, 231, 199);
 }
 .card {
-  max-width: 95rem;
+  max-width: 85rem;
   margin: auto;
-  padding: 12px;
+  padding: 125px;
   background-color: blue;
   position: static;
   top: 30px;
