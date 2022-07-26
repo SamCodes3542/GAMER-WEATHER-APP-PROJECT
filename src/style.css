@@ -8,32 +8,34 @@ body {
 }
 h1 {
   font-family: "Fjalla One", sans-serif;
-  color: rgb(224, 68, 224);
+  color: white;
   font-size: 62px;
   font-weight: bold;
   position: fixed;
-  left: 40px;
-  top: 30px;
+  left: 130px;
+  top: 85px;
   display: block;
   margin: 0 auto;
 }
 h2 {
   position: fixed;
-  color: rgb(224, 68, 224);
-  top: 130px;
+  top: 150px;
   left: 690px;
-  font-size: 75px;
+  color: white;
   font-family: "Fjalla One", sans-serif;
+  font-style: bold;
+  font-size: 65px;
   display: block;
-  margin: 0 auto;
+  margin: 0, auto;
 }
 p {
   text-align: center;
-  color: rgb(224, 68, 224);
+  color: white;
   font-family: "Fjalla One", sans-serif;
   font-style: bold;
   font-size: 54px;
-  margin: auto;
+  margin: 0, auto;
+  padding: 90px;
 }
 footer {
   text-align: center;
@@ -41,42 +43,69 @@ footer {
   font-family: "Fjalla One", sans-serif;
   display: block;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 54px;
+}
+#current-location-button {
+  position: fixed;
+  right: 155px;
+  top: 200px;
 }
 #icon {
   position: fixed;
-  top: 80px;
+  top: 140px;
   font-weight: bold;
-  left: 400px;
+  left: 470px;
   font-size: 250px;
   display: block;
   margin: 0 auto;
 }
-#fahrenheit-link {
-  font-size: 25px;
-  color: black;
-}
-#celsius-link {
-  font-size: 25px;
-  color: black;
-}
-#current-location-button {
+.current {
+  list-style: none;
+  color: rgb(22, 29, 27);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
   position: fixed;
-  right: 50px;
-  top: 160px;
+  top: 230px;
+  left: 650px;
+  display: block;
+  margin: 0 auto;
+}
+.current-temp {
+  list-style: none;
+  color: rgb(22, 29, 27);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
+  position: fixed;
+  left: 100px;
+  top: 165px;
+  display: block;
+  margin: 0 auto;
+}
+.temperature .units {
+  position: relative;
+  font-size: 24px;
+  top: -40px;
+}
+.temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.temperature .active:hover {
+  text-decoration: none;
 }
 .fg--search {
   position: relative;
   width: 420px;
-  left: 1000px;
-  top: 140px;
+  left: 900px;
+  top: 190px;
 }
 
 .fg--search input {
   width: 100%;
   padding: 10px 60px 20px 20px;
   display: block;
-  border: 1px line rgb(224, 68, 224);
+  border: 1px line rgb(104, 231, 199);
   border-radius: 20px;
 }
 
@@ -94,32 +123,20 @@ footer {
 }
 
 .fg--search input:focus + button .fa-search {
-  color: rgb(240, 96, 156);
-}
-
-.slogan {
-  text-align: center;
-  color: rgb(248, 242, 248);
-  font-family: "Fjalla One", sans-serif;
-  display: block;
-  margin: 0 auto;
-  font-size: 14px;
-  padding: 20px;
+  color: rgb(104, 231, 199);
 }
 .card {
   max-width: 95rem;
   margin: auto;
-  padding: 30px;
+  padding: 12px;
   background-color: blue;
-  position: relative;
-  top: 320px;
-  color: rgb(224, 68, 224);
+  position: static;
+  top: 30px;
+  color: black;
   border-radius: 20px;
 }
 .row {
   font: 20px;
-}
-.fa-solid fa-wind {
   color: white;
 }
 .name {
@@ -132,24 +149,15 @@ footer {
 }
 .gitLink {
   color: black;
+  text-decoration: none;
 }
 .gitLink:hover {
   color: white;
+  text-decoration: underline;
 }
 .container {
   border: 20px;
   border-radius: 20px;
   margin: 0px;
   display: block;
-}
-.current {
-  list-style: none;
-  color: rgb(224, 68, 224);
-  font-family: "Fjalla One", sans-serif;
-  font-size: 20px;
-  position: fixed;
-  top: 230px;
-  left: 650px;
-  display: block;
-  margin: 0 auto;
 }
