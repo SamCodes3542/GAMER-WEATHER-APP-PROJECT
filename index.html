@@ -16,10 +16,8 @@
     />
     <script src="https://kit.fontawesome.com/9dd5b43ce8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
-  
-
 </head>
 
 
@@ -27,6 +25,14 @@
      <div class="container"> 
       <h1 id="city">
       </h1>
+      <ul class="current-temp">
+        <li id="date">
+          Last Updated:
+        </li>
+        <li>
+        Currently: <span id="description"></span>
+        </li>
+      </ul>
     
       <img src="https://openweathermap.org/img/wn/01d@2x.png"
           alt="weather icon"
@@ -61,12 +67,6 @@
 </form>
   <body>
       <ul class="current">
-        <li id="date">
-          Wednesday 22:00
-        </li>
-        <li>
-        Currently <span id="description"></span>
-        </li>
         <li>
         Humidity: <span id="humidity"></span>% 
       </li>
