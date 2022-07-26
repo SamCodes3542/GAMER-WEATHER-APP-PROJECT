@@ -38,12 +38,13 @@ p {
   padding: 90px;
 }
 footer {
-  text-align: center;
-  color: rgb(224, 68, 224);
+  position: fixed;
+  bottom: 85px;
+  color: rgb(104, 231, 199);
   font-family: "Fjalla One", sans-serif;
   display: block;
   margin: 0 auto;
-  font-size: 54px;
+  font-size: 14px;
 }
 #current-location-button {
   position: fixed;
