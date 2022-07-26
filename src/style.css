@@ -116,6 +116,9 @@ footer {
   color: rgb(224, 68, 224);
   border-radius: 20px;
 }
+.row {
+  font: 20px;
+}
 .fa-solid fa-wind {
   color: white;
 }
