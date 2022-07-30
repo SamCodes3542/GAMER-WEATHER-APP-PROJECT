@@ -50,6 +50,7 @@ function displayWeatherConditions(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+
 function search(city) {
   let apiKey = "094b50c9907d04014c22a077f5e1062a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -83,6 +84,7 @@ function convertToFahrenheitFeelsLike(event) {
     (celsiusTemperatureFeelsLike * 9) / 5 + 32;
   feelsLikeElement.innerHTML = Math.round(fahrenheitTemperatureFeelsLike);
 }
+
 function convertToCelsiusFeelsLike(event) {
   event.preventDefault();
   celsiusLinkFeelsLike.classList.add("now");
@@ -126,7 +128,7 @@ fahrenheitLinkFeelsLike.addEventListener("click", convertToFahrenheitFeelsLike);
 let celsiusLinkFeelsLike = document.querySelector("#celsius-link-feels-like");
 celsiusLinkFeelsLike.addEventListener("click", convertToCelsiusFeels
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
+Let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
