@@ -83,6 +83,20 @@ footer {
   display: block;
   margin: 0 auto;
 }
+.current-info .units-feels-like {
+  position: relative;
+  font-size: 14px;
+  font-family: "Bungee Shade", cursive;
+  top: -5px;
+}
+.current-info .units-feels-like .now {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.current-info .units-feels-like .now:hover {
+  text-decoration: none;
+}
 .temperature .units {
   position: relative;
   font-size: 24px;

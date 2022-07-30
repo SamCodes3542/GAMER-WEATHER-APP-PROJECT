@@ -33,6 +33,9 @@ function displayWeatherConditions(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
+  document.querySelector("#feels-like").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -70,6 +73,23 @@ function displayCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function convertToFahrenheitFeelsLike(event) {
+  event.preventDefault();
+  celsiusLinkFeelsLike.classList.remove("now");
+  fahrenheitLinkFeelsLike.classList.add("now");
+  let feelsLikeElement = document.querySelector("#feels-like");
+  let fahrenheitTemperatureFeelsLike =
+    (celsiusTemperatureFeelsLike * 9) / 5 + 32;
+  feelsLikeElement.innerHTML = Math.round(fahrenheitTemperatureFeelsLike);
+}
+function convertToCelsiusFeelsLike(event) {
+  event.preventDefault();
+  celsiusLinkFeelsLike.classList.add("now");
+  fahrenheitLinkFeelsLike.classList.remove("now");
+  let feelsLikeElement = document.querySelector("#feels-like");
+  feelsLikeElement.innerHTML = Math.round(celsiusTemperatureFeelsLike);
+}
+
 function convertToFahrenheit(event) {
   event.preventDefault();
   celsiusLink.classList.remove("active");
@@ -94,6 +114,14 @@ cityForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", displayCurrentLocation);
+
+let fahrenheitLinkFeelsLike = document.querySelector(
+  "#fahrenheit-link-feels-like"
+);
+fahrenheitLinkFeelsLike.addEventListener("click", convertToFahrenheitFeelsLike);
+
+let celsiusLinkFeelsLike = document.querySelector("#celsius-link-feels-like");
+celsiusLinkFeelsLike.addEventListener("click", convertToCelsiusFeels
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
