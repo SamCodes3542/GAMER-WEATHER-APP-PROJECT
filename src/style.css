@@ -130,14 +130,14 @@ footer {
   max-width: 85rem;
   margin: auto;
   padding: 125px;
-  background-color: rgb(121, 121, 126);
+  background-color: rgba(79, 121, 199, 0.4);
   position: static;
   top: 30px;
   color: black;
   border-radius: 20px;
 }
 .row {
-  font: 20px;
+  font: 30px;
   font-family: "Fjalla One", sans-serif;
   color: white;
 }
@@ -146,15 +146,15 @@ footer {
   color: rgb(252, 245, 252);
 }
 .name:hover {
-  color: pink;
+  color: rgb(104, 231, 199);
   text-decoration: underline;
 }
 .gitLink {
-  color: black;
+  color: rgb(252, 245, 252);
   text-decoration: none;
 }
 .gitLink:hover {
-  color: white;
+  color: rgb(104, 231, 199);
   text-decoration: underline;
 }
 .container {
