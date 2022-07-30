@@ -72,7 +72,7 @@ footer {
   display: block;
   margin: 0 auto;
 }
-.current-temp {
+.current-info {
   list-style: none;
   color: rgb(104, 231, 199);
   font-family: "Fjalla One", sans-serif;
