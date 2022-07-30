@@ -14,20 +14,21 @@ h1 {
   font-weight: bold;
   position: fixed;
   left: 130px;
-  top: 85px;
+  top: 65px;
   display: block;
   margin: 0 auto;
 }
+
 h2 {
   position: fixed;
+  color: white;
   top: 150px;
   left: 690px;
-  color: white;
-  font-family: "Bungee Shade", cursive;
-  font-style: bold;
   font-size: 65px;
+  font-style: bold;
+  font-family: "Bungee Shade", cursive;
   display: block;
-  margin: 0, auto;
+  margin: 0 auto;
 }
 p {
   text-align: center;
@@ -40,6 +41,7 @@ p {
 }
 footer {
   position: fixed;
+  left: 150px;
   bottom: 85px;
   color: rgb(104, 231, 199);
   font-family: "Fjalla One", sans-serif;
@@ -51,7 +53,9 @@ footer {
   position: fixed;
   right: 155px;
   top: 200px;
+  color: rgb(104, 231, 199);
 }
+
 #icon {
   position: fixed;
   top: 140px;
@@ -79,7 +83,7 @@ footer {
   font-size: 20px;
   position: fixed;
   left: 100px;
-  top: 165px;
+  top: 145px;
   display: block;
   margin: 0 auto;
 }
@@ -100,6 +104,7 @@ footer {
 .temperature .units {
   position: relative;
   font-size: 24px;
+  font-family: "Bungee Shade", cursive;
   top: -40px;
 }
 .temperature .active {
@@ -116,7 +121,6 @@ footer {
   left: 900px;
   top: 190px;
 }
-
 .fg--search input {
   width: 100%;
   padding: 10px 60px 20px 20px;
@@ -152,9 +156,9 @@ footer {
   border-radius: 20px;
 }
 .row {
+  color: white;
   font: 30px;
   font-family: "Fjalla One", sans-serif;
-  color: white;
 }
 .name {
   text-decoration: none;
@@ -172,6 +176,7 @@ footer {
   color: rgb(104, 231, 199);
   text-decoration: underline;
 }
+
 .container {
   border: 20px;
   border-radius: 20px;

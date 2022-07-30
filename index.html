@@ -15,45 +15,46 @@
       crossorigin="snonymous"
     />
     <script src="https://kit.fontawesome.com/9dd5b43ce8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dancing+Script:wght@500&family=Fjalla+One&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
-</head>
-
-
-  <body>
-     <div class="container"> 
+    <link rel="stylesheet" href="src/styles.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dancing+Script:wght@500&family=Fjalla+One&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+     <div class="container">
+        
       <h1 id="city">
-       </h1>
-     <ul class="current-info">
-        <li id="date">
-          Last Updated:
+      </h1>
+      <ul class="current-info">
+        <li>
+          Last Updated: <span id="date"><span> 
           </li>
-        <li>
-        Currently: <span id="description"></span>
-         </li>
-        <li>
-        Feels Like: <span id="feels-like"></span>
-          <span class="units-feels-like">
-             <a href="#" id="celsius-link-feels-like" class="now">°C</a>|
-             <a href="#" id="fahrenheit-link-feels-like">°F</a>
-          </span>
+          <li>
+          Currently: <span id="description"></span>
+          </li>
+          <li>
+          Feels Like: <span id="feels-like"></span>
+            <span class="units-feels-like">
+              <a href="#" id="celsius-link-feels-like" class="now">°C</a>|
+              <a href="#" id="fahrenheit-link-feels-like">°F</a>
+                      </span>
             </li>
-      </ul>
+        </ul>
     
       <img src="https://openweathermap.org/img/wn/01d@2x.png"
           alt="weather icon"
           id="icon"
-          />
+      />
+
       <h2>
           <div class="temperature">
-        <span id="temperature"></span>°
-        <span class="units">
-         <a href="#" id="celsius-link" class="active">°C</a> |
+          <span id="temperature"></span>°
+            <span class="units">
+        <a href="#" id="celsius-link" class="active">C</a>|
         <a href="#" id="fahrenheit-link">F</a>
-      </span>
-      </div>
+                </span>
+        </div>
       </h2>
-     </div>
+    </div>
      <form id="city-form">
   <div class="form-group fg--search">
   <input type="text" 
@@ -76,14 +77,15 @@
   <body>
       <ul class="current">
         <li>
-        Humidity: <span id="humidity"></span>% 
+          💧Humidity: <span id="humidity"></span>% 
       </li>
       <li>
-        Wind: <span id="wind"></span>km/h
+          💨Wind: <span id="wind"></span>km/h
       </li>
-		</ul>
-   <strong><div class="card">
-          <div class="card-body">
+    </ul>
+
+   <strong> <div class="card">
+      <div class="card-body"></div>
           <p>
             5 Day ForeCast
 					</p>
@@ -145,17 +147,16 @@
       </div></strong>
  <footer>
     <a href="https://github.com/SamCodes3542/MY-WEATHER-APP-PROJECT" target="_blank" class="gitLink">
-        <span>Open Source Code</span>
-          </a>  
-           By 
-    <a href="https://www.linkedin.com/in/samantha-montgomery-70a68323a/" target="_blank" class="name">
+      <span>Open Source Code</span>
+        </a>   
+   By 
+           <a href="https://www.linkedin.com/in/samantha-montgomery-70a68323a/" target="_blank" class="name">
            <span>Samantha Montgomery</span>
              </a>
                </footer>
-
     </div>
     </div>
- <script src="src/index.js"></script>
-             
+          <script src="src/index.js"></script>   
   </body>
+
 </html>

@@ -25,7 +25,6 @@ function formatDate(date) {
 function displayWeatherConditions(response) {
   console.log(response.data);
 
-  celsiusTemperatureFeelsLike = response.data.main.feels_like;
   celsiusTemperature = response.data.main.temp;
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
@@ -35,7 +34,7 @@ function displayWeatherConditions(response) {
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#feels-like").innerHTML = Math.round(
-    celsiusTemperatureFeelsLike
+    response.data.main.feels_like
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -74,7 +73,6 @@ function displayCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-
 function convertToFahrenheitFeelsLike(event) {
   event.preventDefault();
   celsiusLinkFeelsLike.classList.remove("now");
@@ -84,7 +82,6 @@ function convertToFahrenheitFeelsLike(event) {
     (celsiusTemperatureFeelsLike * 9) / 5 + 32;
   feelsLikeElement.innerHTML = Math.round(fahrenheitTemperatureFeelsLike);
 }
-
 function convertToCelsiusFeelsLike(event) {
   event.preventDefault();
   celsiusLinkFeelsLike.classList.add("now");
@@ -101,7 +98,6 @@ function convertToFahrenheit(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-
 function convertToCelsius(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
@@ -126,9 +122,9 @@ let fahrenheitLinkFeelsLike = document.querySelector(
 fahrenheitLinkFeelsLike.addEventListener("click", convertToFahrenheitFeelsLike);
 
 let celsiusLinkFeelsLike = document.querySelector("#celsius-link-feels-like");
-celsiusLinkFeelsLike.addEventListener("click", convertToCelsiusFeels
+celsiusLinkFeelsLike.addEventListener("click", convertToCelsiusFeelsLike);
 
-Let fahrenheitLink = document.querySelector("#fahrenheit-link");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
