@@ -107,6 +107,8 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+let celsiusTemperatureFeelsLike = null;
+
 celsiusTemperature = null;
 
 let cityForm = document.querySelector("#city-form");
