@@ -25,6 +25,7 @@ function formatDate(date) {
 function displayWeatherConditions(response) {
   console.log(response.data);
 
+  celsiusTemperatureFeelsLike = response.data.main.feels_like;
   celsiusTemperature = response.data.main.temp;
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
@@ -34,7 +35,7 @@ function displayWeatherConditions(response) {
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#feels-like").innerHTML = Math.round(
-    response.data.main.feels_like
+    celsiusTemperatureFeelsLike
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -109,7 +110,7 @@ function convertToCelsius(event) {
 
 let celsiusTemperatureFeelsLike = null;
 
-celsiusTemperature = null;
+let celsiusTemperature = null;
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", handleSubmit);
