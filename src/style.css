@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
 }
 h1 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Bungee Shade", cursive;
   color: white;
   font-size: 62px;
   font-weight: bold;
@@ -22,7 +22,7 @@ h2 {
   top: 150px;
   left: 690px;
   color: white;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Bungee Shade", cursive;
   font-style: bold;
   font-size: 65px;
   display: block;
@@ -31,7 +31,7 @@ h2 {
 p {
   text-align: center;
   color: white;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Bungee Shade", cursive;
   font-style: bold;
   font-size: 54px;
   margin: 0, auto;
@@ -138,6 +138,7 @@ footer {
 }
 .row {
   font: 20px;
+  font-family: "Fjalla One", sans-serif;
   color: white;
 }
 .name {
