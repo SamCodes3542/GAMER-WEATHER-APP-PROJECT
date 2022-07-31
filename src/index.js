@@ -24,7 +24,7 @@ function formatDate(date) {
 }
 function displayWeatherConditions(response) {
   console.log(response.data);
-
+  celsiusTemperatureFeelsLike = response.data.main.feels_like;
   celsiusTemperature = response.data.main.temp;
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
