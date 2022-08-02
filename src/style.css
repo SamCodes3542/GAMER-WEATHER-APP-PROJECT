@@ -1,4 +1,4 @@
-* {
+H* {
   box-sizing: border-box;
 }
 body {
@@ -7,46 +7,48 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1 {
-  font-family: "Bungee Shade", cursive;
+h1,
+h2,
+p {
+  font-family: "Press Start 2P", cursive;
   color: white;
+  margin: 0 auto;
+}
+h1 {
   font-size: 62px;
   font-weight: bold;
   position: fixed;
   left: 130px;
   top: 65px;
   display: block;
-  margin: 0 auto;
 }
-
 h2 {
   position: fixed;
-  color: white;
   top: 150px;
   left: 690px;
   font-size: 65px;
   font-style: bold;
-  font-family: "Bungee Shade", cursive;
   display: block;
-  margin: 0 auto;
 }
 p {
   text-align: center;
-  color: white;
-  font-family: "Bungee Shade", cursive;
   font-style: bold;
   font-size: 54px;
-  margin: 0, auto;
-  padding: 90px;
+  padding: 100px;
+  display: block;
+}
+footer,
+.current,
+.current-info {
+  color: rgb(104, 231, 199);
+  font-family: "Fjalla One", sans-serif;
+  display: block;
+  margin: 0 auto;
 }
 footer {
   position: fixed;
   left: 150px;
   bottom: 85px;
-  color: rgb(104, 231, 199);
-  font-family: "Fjalla One", sans-serif;
-  display: block;
-  margin: 0 auto;
   font-size: 14px;
 }
 #current-location-button {
@@ -66,26 +68,19 @@ footer {
   margin: 0 auto;
 }
 .current {
-  list-style: none;
-  color: rgb(104, 231, 199);
-  font-family: "Fjalla One", sans-serif;
-  font-size: 20px;
-  position: fixed;
   top: 230px;
   left: 650px;
-  display: block;
-  margin: 0 auto;
 }
 .current-info {
-  list-style: none;
-  color: rgb(104, 231, 199);
-  font-family: "Fjalla One", sans-serif;
-  font-size: 20px;
-  position: fixed;
   left: 100px;
   top: 145px;
-  display: block;
-  margin: 0 auto;
+}
+.current,
+.current-info {
+  font-family: "Orbitron", sans-serif;
+  list-style: none;
+  font-size: 20px;
+  position: fixed;
 }
 .current-info .units-feels-like {
   position: relative;
@@ -142,41 +137,39 @@ footer {
   z-index: 2;
 }
 
-.fg--search input:focus + button .fa-search {
-  color: rgb(104, 231, 199);
+.game-controller {
+  color: rgb(245, 77, 11);
+  font-size: larger;
 }
 .card {
-  max-width: 85rem;
-  margin: auto;
-  padding: 125px;
-  background-color: rgba(79, 121, 199, 0.4);
-  position: static;
-  top: 30px;
-  color: black;
-  border-radius: 20px;
+  font-size: 28px;
+  text-align: center;
+  width: 200px;
+  background: rgb(104, 231, 199, 0.7);
+  color: #2d4059;
+  margin: 0px 10px;
+  padding: 10px;
+  border: solid 1.5px #240747;
 }
 .row {
+  display: block;
+  margin: 20px;
   color: white;
-  font: 30px;
+  font: 65px;
+  font-weight: bold;
   font-family: "Fjalla One", sans-serif;
 }
-.name {
-  text-decoration: none;
-  color: rgb(252, 245, 252);
-}
-.name:hover {
-  color: rgb(104, 231, 199);
-  text-decoration: underline;
-}
+.name,
 .gitLink {
-  color: rgb(252, 245, 252);
+  font-family: "Orbitron", sans-serif;
   text-decoration: none;
+  color: rgb(252, 245, 252);
 }
+.name:hover,
 .gitLink:hover {
   color: rgb(104, 231, 199);
   text-decoration: underline;
 }
-
 .container {
   border: 20px;
   border-radius: 20px;
