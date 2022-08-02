@@ -29,7 +29,6 @@ function displayWeatherConditions(response) {
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
   dateElement.innerHTML = formatDate(currentTime);
-
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
@@ -73,6 +72,7 @@ function displayCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
 function convertToFahrenheitFeelsLike(event) {
   event.preventDefault();
   celsiusLinkFeelsLike.classList.remove("now");
@@ -82,6 +82,7 @@ function convertToFahrenheitFeelsLike(event) {
     (celsiusTemperatureFeelsLike * 9) / 5 + 32;
   feelsLikeElement.innerHTML = Math.round(fahrenheitTemperatureFeelsLike);
 }
+
 function convertToCelsiusFeelsLike(event) {
   event.preventDefault();
   celsiusLinkFeelsLike.classList.add("now");
@@ -98,6 +99,7 @@ function convertToFahrenheit(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
+
 function convertToCelsius(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
@@ -119,6 +121,7 @@ currentLocationButton.addEventListener("click", displayCurrentLocation);
 let fahrenheitLinkFeelsLike = document.querySelector(
   "#fahrenheit-link-feels-like"
 );
+
 fahrenheitLinkFeelsLike.addEventListener("click", convertToFahrenheitFeelsLike);
 
 let celsiusLinkFeelsLike = document.querySelector("#celsius-link-feels-like");
