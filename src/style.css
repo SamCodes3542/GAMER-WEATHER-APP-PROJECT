@@ -1,4 +1,4 @@
-H* {
+* {
   box-sizing: border-box;
 }
 body {
@@ -112,13 +112,16 @@ footer {
 }
 .fg--search {
   position: relative;
+
   width: 420px;
   left: 900px;
   top: 190px;
 }
 .fg--search input {
+  background: rgb(224, 103, 224);
+  opacity: 0.7;
   width: 100%;
-  padding: 10px 60px 20px 20px;
+  padding: 20px 20px 10px 20px;
   display: block;
   border: 1px line rgb(104, 231, 199);
   border-radius: 20px;
@@ -131,15 +134,14 @@ footer {
   display: inline-block;
   font-size: 40px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -20px;
+  right: -15px;
   padding: 18px 20px;
-  z-index: 2;
+  z-index: 15;
 }
 
 .game-controller {
   color: rgb(245, 77, 11);
-  font-size: larger;
 }
 .card {
   font-size: 28px;
@@ -157,7 +159,7 @@ footer {
   color: white;
   font: 65px;
   font-weight: bold;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 .name,
 .gitLink {
