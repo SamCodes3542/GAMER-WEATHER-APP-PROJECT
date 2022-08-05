@@ -3,7 +3,7 @@
 }
 body {
   font-family: sans-serif;
-  background-image: url("http://csshint.com/wp-content/uploads/2020/01/CSS-Animated-Backgrounds-2.gif");
+  background-image: url("https://media1.giphy.com/media/l3vRnoppYtfEbemBO/giphy.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -15,29 +15,46 @@ p {
   margin: 0 auto;
 }
 h1 {
-  font-size: 62px;
+  font-size: 60px;
   font-weight: bold;
   position: fixed;
   left: 130px;
-  top: 65px;
+  top: 45px;
   display: block;
+  background-image: linear-gradient(to top, purple, rgb(104, 231, 199));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 h2 {
   position: fixed;
-  top: 270px;
-  right: 280px;
-  text-align: center;
-  font-style: bold;
+  top: 170px;
+  left: 690px;
   font-size: 50px;
-  padding: 100px;
+  font-style: bold;
   display: block;
+  background-image: linear-gradient(to top, purple, rgb(104, 231, 199));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 p {
+  position: fixed;
+  top: 370px;
+  right: 180px;
   text-align: center;
   font-style: bold;
-  font-size: 54px;
+  font-size: 30px;
   padding: 100px;
   display: block;
+  background-image: linear-gradient(to top, purple, rgb(104, 231, 199));
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  transition-duration: 3s;
+}
+p:hover {
+  letter-spacing: 10px;
+  cursor: pointer;
 }
 footer,
 .current,
@@ -74,8 +91,8 @@ footer {
   left: 650px;
 }
 .current-info {
-  left: 100px;
-  top: 145px;
+  left: 90px;
+  top: 115px;
 }
 .current,
 .current-info {
@@ -89,9 +106,10 @@ footer {
   font-size: 14px;
   font-family: "Bungee Shade", cursive;
   top: -5px;
+  color: rgb(19, 191, 197);
 }
 .current-info .units-feels-like .now {
-  color: black;
+  color: rgb(19, 191, 197);
   cursor: default;
   text-decoration: none;
 }
@@ -103,14 +121,17 @@ footer {
   font-size: 24px;
   font-family: "Bungee Shade", cursive;
   top: -40px;
+  left: -55px;
 }
 .temperature .active {
-  color: black;
+  color: rgb(19, 191, 197);
   cursor: default;
   text-decoration: none;
+  color: rgb(19, 191, 197);
 }
 .temperature .active:hover {
   text-decoration: none;
+  color: rgb(19, 191, 197);
 }
 .fg--search {
   position: relative;
@@ -123,7 +144,7 @@ footer {
   background: rgb(224, 103, 224);
   opacity: 0.7;
   width: 100%;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 20px 20px;
   display: block;
   border: 1px line rgb(104, 231, 199);
   border-radius: 20px;
@@ -136,17 +157,17 @@ footer {
   display: inline-block;
   font-size: 40px;
   position: absolute;
-  top: -20px;
+  top: -10px;
   right: -15px;
   padding: 18px 20px;
   z-index: 15;
 }
 
 .game-controller {
-  color: rgb(245, 77, 11);
+  color: rgb(19, 191, 197);
 }
 .card {
-  font-size: 28px;
+  font-size: 25px;
   text-align: center;
   width: 200px;
   background: rgb(104, 231, 199, 0.7);
