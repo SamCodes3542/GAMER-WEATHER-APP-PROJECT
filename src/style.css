@@ -24,10 +24,12 @@ h1 {
 }
 h2 {
   position: fixed;
-  top: 150px;
-  left: 690px;
-  font-size: 65px;
+  top: 270px;
+  right: 280px;
+  text-align: center;
   font-style: bold;
+  font-size: 50px;
+  padding: 100px;
   display: block;
 }
 p {
@@ -154,7 +156,6 @@ footer {
   border: solid 1.5px #240747;
 }
 .row {
-  display: block;
   margin: 20px;
   color: white;
   font: 65px;
