@@ -1,8 +1,17 @@
+const text = document.querySelector(`.text, p`);
+text.innerHTML = text.innerText
+  .split(``)
+  .map(
+    (char, i) => `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+  )
+  .join(``);
+
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
+
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -22,6 +31,7 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -47,6 +57,7 @@ function displayForecast() {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "094b50c9907d04014c22a077f5e1062a";
@@ -54,6 +65,7 @@ function getForecast(coordinates) {
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
+
 function displayWeatherConditions(response) {
   console.log(response.data);
   celsiusTemperatureFeelsLike = response.data.main.feels_like;
