@@ -15,7 +15,9 @@ body {
 
 h1,
 h2,
-p {
+p,
+.forecast-day,
+.weather-temps {
   font-family: "Press Start 2P", cursive;
   color: white;
   margin: 0 auto;
@@ -83,8 +85,8 @@ footer,
 
 footer {
   position: fixed;
-  left: 100px;
-  bottom: 75px;
+  left: 70px;
+  bottom: 45px;
   font-size: 14px;
 }
 
@@ -159,7 +161,7 @@ footer {
 
 .temperature .active:hover {
   text-decoration: none;
-  color: rgb(19, 191, 197);
+  color: rgb(224, 103, 224);
 }
 
 .fg--search {
@@ -280,6 +282,7 @@ footer {
   text-decoration: none;
   color: rgb(252, 245, 252);
 }
+
 .name:hover,
 .gitLink:hover {
   color: rgb(224, 103, 224);
