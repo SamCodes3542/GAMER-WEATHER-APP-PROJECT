@@ -39,8 +39,7 @@
      <li>
       Feels Like: <span id="feels-like"></span>
       <span class="units-feels-like">
-          <a href="#" id="celsius-link-feels-like" class="now">°C</a>|
-          <a href="#" id="fahrenheit-link-feels-like">°F</a>
+         F
     </span>
    </li>
   </ul>
@@ -52,8 +51,7 @@
    <div class="temperature">
      <span id="temperature"></span>°
      <span class="units">
-        <a href="#" id="celsius-link" class="active">C</a>|
-        <a href="#" id="fahrenheit-link">F</a>
+       F
    </span>
   </div>
  </h2>
@@ -62,21 +60,25 @@
     <div class="form-group fg--search">
      <input type="text" 
             class="input"
-            placeholder="search"
+            placeholder= "search"
             id="city-input"
             autocomplete = "off"
             autofocus = "on">
-  <button type="submit" class="joystick">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
-  <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
-  <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
-</svg> 
- </button>
+  <button type="submit" class="joystick" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+        <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+        <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+      </svg> 
+  </button>
 </div>
+ <button
+type="submit" class="game-controller"
+id="current-location-button"
+>
+<i class="fa-solid fa-gamepad"></i>
+</button>
+<strong><div class="current-location-text">Current Location</div></strong>
 </form>
-  <button type="button" class="game-controller" id="current-location-button">
-     <i class="fa-solid fa-gamepad"></i>
- </button>
       <ul class="current">
         <li>
           💧Humidity: <span id="humidity"></span>% 
@@ -84,12 +86,7 @@
       <li>
           💨Wind: <span id="wind"></span>km/h
      </li>
-    </ul>
-    <div class="circle">
-      <div class="text">
-        <p> Current Forecast   -   Weather Conditions   -</p>
-      </div>
-    </div>  
+    </ul>  
     <p>
     5 Day ForeCast
      </p>

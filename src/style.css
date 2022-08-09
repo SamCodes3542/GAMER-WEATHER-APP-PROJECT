@@ -34,14 +34,14 @@ h1 {
   font-size: 60px;
   font-weight: bold;
   position: fixed;
-  left: 110px;
+  left: 30px;
   top: 45px;
   display: block;
 }
 
 h2 {
   position: fixed;
-  top: 170px;
+  top: 140px;
   left: 690px;
   font-size: 50px;
   font-style: bold;
@@ -70,7 +70,7 @@ p {
 }
 
 p:hover {
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   cursor: pointer;
 }
 
@@ -100,21 +100,21 @@ footer {
 
 #icon {
   position: fixed;
-  top: 140px;
+  top: 120px;
   font-weight: bold;
-  left: 470px;
+  left: 550px;
   font-size: 250px;
   display: block;
   margin: 0 auto;
 }
 
 .current {
-  top: 230px;
+  top: 200px;
   left: 650px;
 }
 
 .current-info {
-  left: 70px;
+  left: 0px;
   top: 115px;
 }
 
@@ -131,17 +131,13 @@ footer {
   font-size: 14px;
   font-family: "Bungee Shade", cursive;
   top: -5px;
-  color: rgb(19, 191, 197);
-}
-
-.current-info .units-feels-like .now {
-  color: rgb(19, 191, 197);
-  cursor: default;
-  text-decoration: none;
-}
-
-.current-info .units-feels-like .now:hover {
-  text-decoration: none;
+  background-image: linear-gradient(
+    to top,
+    rgb(224, 103, 224),
+    rgb(104, 231, 199)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .temperature .units {
@@ -150,25 +146,20 @@ footer {
   font-family: "Bungee Shade", cursive;
   top: -40px;
   left: -55px;
-}
-
-.temperature .active {
-  color: rgb(19, 191, 197);
-  cursor: default;
-  text-decoration: none;
-  color: rgb(19, 191, 197);
-}
-
-.temperature .active:hover {
-  text-decoration: none;
-  color: rgb(224, 103, 224);
+  background-image: linear-gradient(
+    to top,
+    rgb(224, 103, 224),
+    rgb(104, 231, 199)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .fg--search {
   position: relative;
   width: 380px;
   left: 300px;
-  top: -40px;
+  top: -150px;
 }
 
 .fg--search input {
@@ -203,77 +194,53 @@ footer {
   right: 150px;
 }
 
-.circle {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -235px;
-  right: -620px;
-}
-
-.text {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  animation: anim 10s linear infinite;
-}
-
-@keyframes anim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.text span {
-  position: absolute;
-  left: 50%;
-  font-size: 1.2 em;
-  transform-origin: 0 100px;
-  background-image: linear-gradient(to top, purple, rgb(104, 231, 199));
-  -webkit-background-clip: text;
-  color: transparent;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  transition-duration: 3s;
-}
-
 .game-controller {
   color: rgb(19, 191, 197);
   background: transparent;
   font-size: 40px;
-  position: fixed;
-  top: 0px;
+  position: relative;
+  top: 410px;
   right: 0px;
+}
+.current-location-text {
+  position: fixed;
+  top: 250px;
+  right: 120px;
+  background-image: linear-gradient(
+    to top,
+    rgb(224, 103, 224),
+    rgb(104, 231, 199)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .card {
-  font-size: 25px;
   text-align: center;
-  width: 200px;
+  width: 170px;
+  height: 220px;
   background: rgb(104, 231, 199, 0.7);
   color: #2d4059;
   margin: 0px 10px;
   padding: 10px;
-  box-shadow: 10px rgb(252, 245, 252);
+  box-shadow: 5px 5px rgb(224, 103, 224) inset;
   border: solid 1.5px #240747;
 }
 
 .row {
   position: fixed;
-  bottom: 130px;
-  right: 30px;
+  bottom: 100px;
+  right: 150px;
   margin: 0px;
   color: white;
-  font: 65px;
   font-weight: bold;
   font-family: "Orbitron", sans-serif;
+}
+.forecast-day {
+  font-size: 20px;
+}
+.weather-temps {
+  font-size: 15px;
 }
 
 .name,

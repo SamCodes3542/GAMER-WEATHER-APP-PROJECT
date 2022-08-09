@@ -48,7 +48,8 @@ function displayForecast(response) {
               <div class="card">
                 <div class="card-body"> 
                   <div class="forecast-day">${formatDay(forecastDay.dt)}
-                 </div>                  
+                 </div> 
+                 <br>                
               <img src="http://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
               }@2x.png"
@@ -56,11 +57,12 @@ function displayForecast(response) {
               width="42"
                />
                   <br>
+                  <br>
               <div class="weather-temps">
                  <span class="min-temp">${Math.round(
                    forecastDay.temp.min
                  )}°</span>
-                 <span class="max-temp">|${Math.round(
+                 <span class="max-temp">/${Math.round(
                    forecastDay.temp.max
                  )}°</span>
                  </div>
@@ -108,16 +110,6 @@ function displayWeatherConditions(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
-
-  const text = document.querySelector(`.text, p`);
-  text.innerHTML = text.innerText
-    .split(``)
-    .map(
-      (char, i) =>
-        `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-    )
-    .join(``);
-  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -144,45 +136,6 @@ function displayCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function convertToFahrenheitFeelsLike(event) {
-  event.preventDefault();
-  celsiusLinkFeelsLike.classList.remove("now");
-  fahrenheitLinkFeelsLike.classList.add("now");
-  let feelsLikeElement = document.querySelector("#feels-like");
-  let fahrenheitTemperatureFeelsLike =
-    (celsiusTemperatureFeelsLike * 9) / 5 + 32;
-  feelsLikeElement.innerHTML = Math.round(fahrenheitTemperatureFeelsLike);
-}
-
-function convertToCelsiusFeelsLike(event) {
-  event.preventDefault();
-  celsiusLinkFeelsLike.classList.add("now");
-  fahrenheitLinkFeelsLike.classList.remove("now");
-  let feelsLikeElement = document.querySelector("#feels-like");
-  feelsLikeElement.innerHTML = Math.round(celsiusTemperatureFeelsLike);
-}
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperatureFeelsLike = null;
-
-let celsiusTemperature = null;
-
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", handleSubmit);
 
@@ -192,16 +145,5 @@ currentLocationButton.addEventListener("click", displayCurrentLocation);
 let fahrenheitLinkFeelsLike = document.querySelector(
   "#fahrenheit-link-feels-like"
 );
-
-fahrenheitLinkFeelsLike.addEventListener("click", convertToFahrenheitFeelsLike);
-
-let celsiusLinkFeelsLike = document.querySelector("#celsius-link-feels-like");
-celsiusLinkFeelsLike.addEventListener("click", convertToCelsiusFeelsLike);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
 
 search("New York");
