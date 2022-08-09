@@ -146,4 +146,4 @@ let fahrenheitLinkFeelsLike = document.querySelector(
   "#fahrenheit-link-feels-like"
 );
 
-search("New York");
+search("Chicago");
