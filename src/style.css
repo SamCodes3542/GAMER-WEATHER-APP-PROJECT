@@ -262,3 +262,27 @@ footer {
   margin: 0px;
   display: block;
 }
+@media (max-width: 600px) {
+  h1 {
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    top: -100px;
+    left: -10px;
+  }
+  .current-info {
+    font-size: 10px;
+    position: relative;
+    top: -100px;
+    left: -40px;
+  }
+  .temperature {
+    position: relative;
+    top: 100px;
+    left: 240px;
+  }
+
+  }
+
+  }
+}
